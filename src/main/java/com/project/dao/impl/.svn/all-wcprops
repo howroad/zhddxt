@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao/impl
+END
+PlanningDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/PlanningDaoImpl.java
+END
+UserDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/UserDaoImpl.java
+END
+RoleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/RoleDaoImpl.java
+END
+SchedulingDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/two/!svn/ver/68/ZHDDXT/src/main/java/com/project/dao/impl/SchedulingDaoImpl.java
+END
+RenewalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/impl/RenewalDao.java
+END
+HisreportDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/HisreportDaoImpl.java
+END
+DataDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/impl/DataDaoImpl.java
+END
+FeedbackDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/impl/FeedbackDaoImpl.java
+END
+RolePowerDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/RolePowerDaoImpl.java
+END
+UserRoleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao/impl/UserRoleDaoImpl.java
+END
+BasicDaoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao/impl/BasicDaoAdapter.java
+END
+InformationDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/InformationDaoImpl.java
+END
+ReportDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/impl/ReportDaoImpl.java
+END
+PowerDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/impl/PowerDaoImpl.java
+END

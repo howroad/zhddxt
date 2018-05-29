@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/service/impl
+END
+CodeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/two/!svn/ver/245/ZHDDXT/src/main/java/com/project/service/impl/CodeServiceImpl.java
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/impl/RoleServiceImpl.java
+END
+PlanningServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/two/!svn/ver/85/ZHDDXT/src/main/java/com/project/service/impl/PlanningServiceImpl.java
+END
+PowerServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/two/!svn/ver/72/ZHDDXT/src/main/java/com/project/service/impl/PowerServiceImpl.java
+END
+UserServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/impl/UserServiceImpl.java
+END
+HisreportServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/two/!svn/ver/207/ZHDDXT/src/main/java/com/project/service/impl/HisreportServiceImpl.java
+END
+InformaticaServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/two/!svn/ver/230/ZHDDXT/src/main/java/com/project/service/impl/InformaticaServiceImpl.java
+END
+ReportServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/two/!svn/ver/218/ZHDDXT/src/main/java/com/project/service/impl/ReportServiceImpl.java
+END
+SchedulingServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/service/impl/SchedulingServiceImpl.java
+END
+DataServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/impl/DataServiceImpl.java
+END
+RenewalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/two/!svn/ver/166/ZHDDXT/src/main/java/com/project/service/impl/RenewalServiceImpl.java
+END
+FeedbackServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/two/!svn/ver/187/ZHDDXT/src/main/java/com/project/service/impl/FeedbackServiceImpl.java
+END

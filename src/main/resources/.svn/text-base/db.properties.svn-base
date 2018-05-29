@@ -1,0 +1,10 @@
+password=hange
+url=jdbc:mysql://192.168.1.156:3306/zhddxt?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#password=06260518
+#url=jdbc:mysql://localhost:3306/zhddxt?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+user=root
+driver=com.mysql.jdbc.Driver
+hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+hibernate.show_sql=false
+hibernate.hbm2ddl.auto=update
+hibernate.temp.use_jdbc_metadata_defaults=false

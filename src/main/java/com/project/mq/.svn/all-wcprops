@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/mq
+END
+ReportMqListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/207/ZHDDXT/src/main/java/com/project/mq/ReportMqListener.java
+END
+IMqSenderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/153/ZHDDXT/src/main/java/com/project/mq/IMqSenderService.java
+END
+ReplyMqListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/mq/ReplyMqListener.java
+END
+MqSenderServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/two/!svn/ver/153/ZHDDXT/src/main/java/com/project/mq/MqSenderServiceImpl.java
+END

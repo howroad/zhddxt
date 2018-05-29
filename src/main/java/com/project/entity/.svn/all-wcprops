@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity
+END
+HistoryEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/HistoryEntity.java
+END
+PlanningEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/85/ZHDDXT/src/main/java/com/project/entity/PlanningEntity.java
+END
+UserEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity/UserEntity.java
+END
+RolePowerEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/RolePowerEntity.java
+END
+InformationEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity/InformationEntity.java
+END
+SchedulingEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/SchedulingEntity.java
+END
+FeedBackEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/FeedBackEntity.java
+END
+RoleEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity/RoleEntity.java
+END
+RenewalEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/RenewalEntity.java
+END
+DataEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/DataEntity.java
+END
+ReportEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity/ReportEntity.java
+END
+UserRoleEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/70/ZHDDXT/src/main/java/com/project/entity/UserRoleEntity.java
+END
+PowerEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/entity/PowerEntity.java
+END

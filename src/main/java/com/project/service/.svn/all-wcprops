@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/service
+END
+IRenewalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/two/!svn/ver/153/ZHDDXT/src/main/java/com/project/service/IRenewalService.java
+END
+IInformationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/two/!svn/ver/197/ZHDDXT/src/main/java/com/project/service/IInformationService.java
+END
+IRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/IRoleService.java
+END
+IFeedbackService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/two/!svn/ver/187/ZHDDXT/src/main/java/com/project/service/IFeedbackService.java
+END
+IPowerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/service/IPowerService.java
+END
+ISchedulingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/two/!svn/ver/259/ZHDDXT/src/main/java/com/project/service/ISchedulingService.java
+END
+IReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/two/!svn/ver/218/ZHDDXT/src/main/java/com/project/service/IReportService.java
+END
+ICodeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/245/ZHDDXT/src/main/java/com/project/service/ICodeService.java
+END
+IDataService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/IDataService.java
+END
+IPlanningService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/two/!svn/ver/85/ZHDDXT/src/main/java/com/project/service/IPlanningService.java
+END
+IHisreportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/two/!svn/ver/113/ZHDDXT/src/main/java/com/project/service/IHisreportService.java
+END
+IUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/service/IUserService.java
+END

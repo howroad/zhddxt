@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao
+END
+IFeedbackDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/IFeedbackDao.java
+END
+IRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IRoleDao.java
+END
+IUserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IUserDao.java
+END
+ISchedulingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/two/!svn/ver/68/ZHDDXT/src/main/java/com/project/dao/ISchedulingDao.java
+END
+IDataDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IDataDao.java
+END
+IReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/IReportDao.java
+END
+IUserRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao/IUserRoleDao.java
+END
+IPlanningDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IPlanningDao.java
+END
+IPowerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IPowerDao.java
+END
+IRenewalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/two/!svn/ver/60/ZHDDXT/src/main/java/com/project/dao/IRenewalDao.java
+END
+IHisreportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IHisreportDao.java
+END
+IRolePowerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IRolePowerDao.java
+END
+IBasicDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/two/!svn/ver/240/ZHDDXT/src/main/java/com/project/dao/IBasicDao.java
+END
+IInformationDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/two/!svn/ver/22/ZHDDXT/src/main/java/com/project/dao/IInformationDao.java
+END

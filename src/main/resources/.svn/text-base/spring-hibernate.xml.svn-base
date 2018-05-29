@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 约束 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd ">
+	<!-- 导入propertis文件 -->
+	<context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
+	<!-- 自动扫描包 -->
+	<context:component-scan base-package="com.project.*">
+		<!-- 不扫描Controller注解 -->
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<!-- Spring管理Hibernate第一步:配置数据源 -->
+	<!-- 使用c3p0连接池的配置 -->
+	<bean id="dataSourceC3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="jdbcUrl" value="${url}"></property>
+		<property name="user" value="${user}"></property>
+		<property name="password" value="${password}"></property>
+		<property name="driverClass" value="${driver}"></property>
+		<property name="maxPoolSize" value="30" />
+		<property name="minPoolSize" value="5" />
+		<!-- 初始化建立的连接数 -->
+		<property name="initialPoolSize" value="10" />
+		<!-- 最大空闲时间，120秒内未被使用的连接将被丢弃 -->
+		<property name="maxIdleTime" value="120" />
+		<!-- 当连接池耗尽，且未达到最大连接数时，一次获取的连接数 -->
+		<property name="acquireIncrement" value="2" />
+		<!-- 空闲检查时间间隔， 每隔120秒检查连接池里的空闲连接 ，单位是秒 -->
+		<property name="idleConnectionTestPeriod" value="60" />
+	</bean>
+	<!-- Spring管理Hibernate第二步:配置sessionFacoty -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceC3p0"></property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+				<prop key="hibernate.temp.use_jdbc_metadata_defaults">${hibernate.temp.use_jdbc_metadata_defaults}</prop>
+			</props>
+		</property>
+		<property name="packagesToScan">
+			<list>
+                <value>com.project.entity</value>
+            </list>
+		</property>
+	</bean>
+	<!-- hibernate的模板类 -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 数据库事务第一步:配置数据库管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 数据库事务第二步:配置事务增强 -->
+	<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="regist" rollback-for="Execption" />
+			<tx:method name="login" read-only="true" />
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="edit*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="new*" propagation="REQUIRED" />
+			<tx:method name="set*" propagation="REQUIRED" />
+			<tx:method name="remove*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="change*" propagation="REQUIRED" />
+			<tx:method name="check*" propagation="REQUIRED" />
+			<tx:method name="show*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="get*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="find*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="load*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="*" propagation="REQUIRED" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<!-- 数据库事务第三步:配置切点 -->
+	<aop:config>
+		<aop:pointcut expression="execution(* com.project.service..*.*(..))"
+			id="transactionPoint" />
+		<aop:advisor advice-ref="transactionAdvice" pointcut-ref="transactionPoint" />
+	</aop:config>
+	<!-- 自定义Realm -->
+	<bean id="myRealm" class="com.project.util.MyRealm" />
+	<!-- 安全管理器 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="myRealm" />
+	</bean>
+	<!-- Shiro过滤器 -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<!-- Shiro的核心安全接口,这个属性是必须的 -->
+		<property name="securityManager" ref="securityManager" />
+		<!-- 身份认证失败，则跳转到登录页面的配置 -->
+		<property name="loginUrl" value="/login.jsp" />
+		<!-- 权限认证失败，则跳转到指定页面 -->
+		<property name="unauthorizedUrl" value="/jsp/unauthorized.jsp" />
+		<!-- Shiro连接约束配置,即过滤链的定义 -->
+		<property name="filterChainDefinitions">
+			<value>
+				/jsp/error.jsp=anon
+				/js/**=anon
+				/css/**=anon
+				/fonts/**=anon
+				/img/**=anon
+				/html/**=anon
+				/login=anon
+				/login.jsp=anon
+				/dunHandler=anon
+				/code/**=anon
+				/user/**=anon
+				/role/**=perms["power:*"]
+				/dataAnalysis/**=perms["analysis:*"]
+				/planning/**=perms["planning:*"]
+				/feedBack/**=perms["scheduling:*"]
+				/history/**=perms["history:*"]
+				/information/**=perms["resources:*"]
+				/renewal/**=perms["scheduling:*"]
+				/report/**=perms["scheduling:*"]
+				/scheduling/**=perms["scheduling:*"]
+				/jsp/** = authc
+			</value>
+		</property>
+	</bean>
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+	<!-- 开启Shiro注解 -->
+	<bean
+		class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+		depends-on="lifecycleBeanPostProcessor" />
+	<bean
+		class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean>
+	<!-- 导入MQ配置 -->
+	<import resource="classpath:mq-customer.xml"/>
+	<import resource="classpath:mq-producer.xml"/>
+</beans>
